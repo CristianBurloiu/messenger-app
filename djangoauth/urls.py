@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', get_index, name='home'),
     url(r'^accounts/', include(accounts_urls)),
-    url(r'^inbox/', include(inbox_urls)),
+    url(r'^messenger/', include(inbox_urls)),
     
 
 ]
