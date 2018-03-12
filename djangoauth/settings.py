@@ -26,7 +26,7 @@ SECRET_KEY = '#p(sg6%tsljth5!u$odw##a7h!n)9#w)-aq40!9ki%axe^9ef#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-day4-cristiancloud9.c9users.io']
+ALLOWED_HOSTS = ['django-day4-cristiancloud9.c9users.io','deploy-method-django-messenger.herokuapp.com']
 
 
 # Application definition
