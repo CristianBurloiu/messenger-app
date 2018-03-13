@@ -10,6 +10,7 @@ def get_index(request):
     
 def logout(request):
     auth.logout(request)
+    messages.success(request, "You have sucessfully logged out")
     return redirect("home")
     
 def login(request):
@@ -24,6 +25,7 @@ def login(request):
             if user is not None:
                 #Log them in
                 auth.login(request, user)
+                messages.success(request, "You have sucessfully logged in")
                 if request.GET and 'next' in request.GET:
                 	next = request.GET['next']
                 	return redirect(next)
