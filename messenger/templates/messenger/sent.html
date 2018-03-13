@@ -16,9 +16,9 @@
             <a href="#" class="btn btn-danger btn-sm btn-block" role="button"><i class="glyphicon glyphicon-edit"></i> Compose</a>
             <hr>
             <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="{% url 'inbox' %}"><span class="badge pull-right">{{ user.messages_received.all|length }}</span> Inbox </a>
+                <li class="active"><a href="{% url 'inbox' %}"><span class="badge pull-right">{{ user.messages_received.all|length }}</span><span class="badge pull-right">{{ user.messages_received.all|length }}</span> Inbox </a>
                 </li>
-                <li><a href="sent">Sent Mail</a></li>
+                <li><a href="sent"><span class="badge pull-right">{{ user.messages_sent.all|length }}</span> Sent Mail</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-md-10">
